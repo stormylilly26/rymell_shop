@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ريمل | أصالةُ المظهر، وفخَامة الجَوهر</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/seo.png?v=2">
+    <link rel="apple-touch-icon" href="images/seo.png?v=2">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            }; if (!f._fbq) f._fbq = n;
+            n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+        }(window,
+            document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '756841240594846');
+        fbq('track', 'PageView');
+    </script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/seo2.png" alt="Rymel Logo">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <video class="bg-video" autoplay loop muted playsinline poster="assets/fallback-image.jpg">
+                <!-- Load the lighter WebM first, fallback to MP4 if the browser doesn't support it -->
+                <source src="images/background.webm" type="video/webm">
+                <source src="images/background.mp4" type="video/mp4">
+            </video>
+            <div class="hero-content container">
+                <h1>رمال - عالم من الخيارات</h1>
+                <p>اكتشفوا تشكيلة واسعة من المنتجات المتميزة والمختارة بعناية لتناسب جميع احتياجاتكم.</p>
+                <a href="#products-list" class="btn-hero">تسوق الآن</a>
+            </div>
+        </section>
+
+        <!-- Features Bar -->
+        <section class="container">
+            <div class="features-bar">
+                <div class="feature-item">
+                    <i data-lucide="truck"></i>
+                    <h3>توصيل لـ 58 ولاية</h3>
+                </div>
+                <div class="feature-item">
+                    <i data-lucide="shield-check"></i>
+                    <h3>جودة مضمونة</h3>
+                </div>
+                <div class="feature-item">
+                    <i data-lucide="headphones"></i>
+                    <h3>دعم متواصل</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products-section" id="products-list">
+            <div class="container">
+                <div class="section-header">
+                    <h2>أحدث الموديلات</h2>
+                    <p>اختياراتنا المختارة بعناية من أجلك</p>
+                </div>
+                <div class="products-grid" id="dynamic-products-list">
+                    <!-- Loader -->
+                    <div class="loader-container">
+                        <i data-lucide="loader" class="spin" style="width: 50px; height: 50px; color: var(--gold);"></i>
+                        <p style="margin-top: 15px; color: var(--text-muted);">جاري تحميل الموديلات...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Enhanced Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/seo2.png" alt="ريمل">
+                    <p>متجر ريمل يوفر لكم تشكيلة واسعة من المنتجات المتميزة بجودة عالية تليق بزبائننا الكرام.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="javascript:void(0)" id="open-policy">سياسة المتجر</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>تابعونا على</h4>
+                    <div class="social-icons">
+                        <a href="https://wa.me/213793200751?text=مرحبا، أود الاستفسار عن منتج" target="_blank"
+                            class="social-icon" title="واتساب">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                            </svg>
+                        </a>
+
+                        <a href="https://ig.me/m/oodtdz" target="_blank" class="social-icon" title="انستغرام">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                            </svg>
+                        </a>
+
+                        <a href="https://m.me/rymell.vogueDZ" target="_blank" class="social-icon" title="ماسنجر">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+
+                        <!--  <a href="https://www.tiktok.com/@rymell.vogueDZ" target="_blank" class="social-icon"
+                            title="تيك توك">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+                            </svg>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h4>اتصل بنا</h4>
+                    <p><a href="tel:+213793200751"
+                            style="color: inherit; text-decoration: none; display: flex; align-items: center; gap: 10px;"><i
+                                data-lucide="phone"></i> <span>+213793200751</span></a></p>
+                    <p><a href="mailto:rymelldz@gmail.com"
+                            style="color: inherit; text-decoration: none; display: flex; align-items: center; gap: 10px;"><i
+                                data-lucide="mail"></i> <span>rymelldz@gmail.com</span></a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rymel Store. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Policy Modal -->
+    <div id="policy-modal" class="modal-overlay" style="display:none;">
+        <div class="modal-card policy-card">
+            <div class="modal-header">
+                <h2>سياسة وقوانين متجر ريمل</h2>
+                <span id="close-policy" class="close-modal" style="cursor:pointer; font-size: 24px;">&times;</span>
+            </div>
+            <div class="modal-body scrollable-content"
+                style="max-height: 70vh; overflow-y: auto; padding-right: 10px; text-align: right; line-height: 1.8;">
+                <!-- 1. Delivery Policy -->
+                <div class="policy-section">
+                    <h3 style="color: var(--gold); border-bottom: 2px solid var(--gold-light); padding-bottom: 10px;">
+                        سياسة التوصيل لـ رمال</h3>
+                    <p>في متجرنا، نفهم أهمية الحصول على طلباتكم بسرعة وكفاءة. لذا، نحن نقدم خيارات شحن مرنة لضمان وصول
+                        منتجاتكم في الوقت المناسب وبأسعار معقولة.</p>
+                    <h4 style="margin-top: 15px;">أوقات التسليم:</h4>
+                    <p>تستغرق عملية التسليم عادةً ما بين 1 إلى 4 أيام عمل، اعتمادًا على موقع التسليم. نحن نعمل جاهدين
+                        لضمان أن طلبك يصل في الإطار الزمني المحدد، مع الحفاظ على أعلى معايير الجودة في التغليف والشحن.
+                    </p>
+                    <h4 style="margin-top: 15px;">تكاليف الشحن:</h4>
+                    <p>يتم موافاة العميل بتكاليف الشحن تلقائيا عند اختياره لمحل استلام المنتج من خلال واجهة الطلب قبل
+                        تأكيد الطلبية، كما يمكنه تغيير محل الاستلام قبل تأكيد الطلبية.</p>
+                    <h4 style="margin-top: 15px;">التغليف:</h4>
+                    <p>نضمن تغليف منتجاتك بعناية فائقة لحمايتها أثناء الشحن. نستخدم مواد تغليف صديقة للبيئة كلما أمكن
+                        ذلك، مع الحرص على الحفاظ على سلامة المنتجات.</p>
+                    <h4 style="margin-top: 15px;">الشروط والأحكام:</h4>
+                    <p>يرجى مراجعة عنوان التوصيل بعناية عند تقديم الطلب لضمان دقته.</p>
+                    <p>في حالة حدوث تأخيرات بسبب ظروف خارجة عن إرادتنا مثل الظروف الجوية السيئة أو الإضرابات، سنبذل
+                        قصارى جهدنا لتحديثك بأحدث المعلومات المتعلقة بتوصيل طلبك.</p>
+                    <p>نشكرك على اختيارك رمال، ونتطلع إلى خدمتك بأفضل طريقة ممكنة. لأي استفسارات أخرى حول سياسة الشحن أو
+                        طلبك، لا تتردد في التواصل معنا.</p>
+                </div>
+
+                <hr class="policy-divider">
+
+                <!-- 2. Return & Exchange Policy -->
+                <div class="policy-section">
+                    <h3 style="color: var(--gold); border-bottom: 2px solid var(--gold-light); padding-bottom: 10px;">
+                        سياسة الاسترجاع والاستبدال لـ رمال</h3>
+                    <p>في متجرنا، نؤمن بضمان رضا عملائنا عن طريق تقديم سياسة استرجاع واستبدال شفافة وعادلة. هدفنا هو جعل
+                        تجربتكم معنا مريحة ومرضية قدر الإمكان.</p>
+                    <h4 style="margin-top: 15px;">حقوق الاستبدال والاسترجاع:</h4>
+                    <p>نضمن لجميع عملائنا حق الاسترجاع والاستبدال لكافة المنتجات المعروضة في متجرنا.</p>
+                    <p>تخضع جميع المنتجات لسياسة الاسترجاع والاستبدال وفقًا للشروط والأحكام الموضحة أدناه.</p>
+                    <h4 style="margin-top: 15px;">شروط الاسترجاع والاستبدال:</h4>
+                    <p>يجب أن يكون المنتج في حالته الأصلية عند الشراء ومغلفًا بالتغليف الأصلي ليتأهل للإرجاع أو
+                        الاستبدال.</p>
+                    <p>يمكن استرجاع المنتج خلال ثلاثة (3) أيام واستبداله خلال خمسة (5) أيام من تاريخ الشراء.</p>
+                    <p>يرجى التواصل معنا عبر صفحة "اتصل بنا" أو الأرقام الهاتفية المخصصة لطلب الاسترجاع أو الاستبدال.
+                    </p>
+                    <h4 style="margin-top: 15px;">إجراءات الاسترجاع والاستبدال:</h4>
+                    <p>عند طلب الاسترجاع أو الاستبدال، يرجى تصوير المنتج وإرسال الصورة مع تحديد المدينة، العنوان، ورقم
+                        الطلب.</p>
+                    <p>في حالة استلام منتج به عيب مصنعي أو فاسد، سيتم استبداله بمنتج آخر دون تكاليف إضافية.</p>
+                    <p>إذا كان المنتج المستلم مختلفًا تمامًا عن وصف المنتج في صفحة المنتج بموقعنا، سيتم استرجاع المبلغ
+                        كاملاً للعميل.</p>
+                    <h4 style="margin-top: 15px;">رسوم الاسترجاع:</h4>
+                    <p>في حالة رغبة العميل في إرجاع المنتج دون وجود عيب أو مشكلة به، يتولى العميل بتغطية التكاليف
+                        اللوجستية و التي تتضمن مصاريف النقل و المنتج نفسه في حالة تلف المنتج قبل ان يستلم من طرف عملاء
+                        المحل.</p>
+                    <h4 style="margin-top: 15px;">استثناءات:</h4>
+                    <p>لا نتحمل المسؤولية عن أي توقعات لاستخدام المنتج لم يتم ذكرها في صفحة المنتج بموقعنا.</p>
+                    <p>نشكركم على ثقتكم في متجرنا ونتطلع دائمًا لتقديم أفضل تجربة تسوق لكم.</p>
+                </div>
+
+                <hr class="policy-divider">
+
+                <!-- 3. Privacy Policy -->
+                <div class="policy-section">
+                    <h3 style="color: var(--gold); border-bottom: 2px solid var(--gold-light); padding-bottom: 10px;">
+                        سياسة الخصوصية لـ رمال</h3>
+                    <h4>المقدمة:</h4>
+                    <p>نحن في متجرنا نقدر خصوصيتك ونلتزم بحماية المعلومات الشخصية التي تشاركها معنا. توضح سياسة الخصوصية
+                        هذه كيفية جمع واستخدام وحماية بياناتك الشخصية.</p>
+                    <h4 style="margin-top: 15px;">المعلومات التي نجمعها:</h4>
+                    <p><strong>المعلومات الشخصية:</strong> قد نجمع معلومات شخصية مثل الاسم، العنوان، رقم الهاتف، والبريد
+                        الإلكتروني عند التسجيل في الموقع أو إجراء عملية شراء.</p>
+                    <p><strong>المعلومات التقنية:</strong> نجمع معلومات تقنية مثل نوع المتصفح، نظام التشغيل، عنوان IP،
+                        وتفاصيل الجلسات على موقعنا لتحسين تجربة المستخدم.</p>
+                    <h4 style="margin-top: 15px;">كيف نستخدم معلوماتك:</h4>
+                    <p>-لمعالجة طلباتك وتقديم المنتجات والخدمات التي طلبتها.</p>
+                    <p>-للتواصل معك بخصوص طلبك أو أي استفسارات قد تكون لديك.</p>
+                    <p>-لتحسين موقعنا وتقديم محتوى وإعلانات مخصصة.</p>
+                    <p>-لإجراء الأبحاث والتحليلات لفهم احتياجاتك وتفضيلاتك.</p>
+                    <h4 style="margin-top: 15px;">مشاركة المعلومات:</h4>
+                    <p>-لن نبيع أو نؤجر معلوماتك الشخصية لأطراف ثالثة لأغراض تسويقية دون موافقتك الصريحة.</p>
+                    <p>-قد نشارك المعلومات مع مزودي الخدمات الذين يعملون نيابة عنا لتوفير الخدمات والمنتجات.</p>
+                    <p>-قد نكشف عن معلوماتك الشخصية إذا كان مطلوبًا بموجب القانون أو لحماية حقوق وملكية رمال.</p>
+                    <h4 style="margin-top: 15px;">الأمان:</h4>
+                    <p>-نستخدم تدابير أمان متقدمة لحماية معلوماتك من الوصول غير المصرح به والكشف غير المشروع والتغيير
+                        والدمار.</p>
+                    <p>-يُطلب من موظفينا والأطراف الثالثة التي تتعامل مع بياناتك الشخصية الالتزام بسرية المعلومات.</p>
+                    <h4 style="margin-top: 15px;">حقوقك:</h4>
+                    <p>-لديك الحق في الوصول إلى معلوماتك الشخصية وتصحيحها أو حذفها.</p>
+                    <p>-يمكنك الاعتراض على معالجة بياناتك الشخصية وطلب تقييد المعالجة أو نقل بياناتك.</p>
+                    <h4 style="margin-top: 15px;">تغييرات على سياسة الخصوصية:</h4>
+                    <p>قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر. سننشر أي تغييرات على هذه الصفحة.</p>
+                    <h4 style="margin-top: 15px;">اتصل بنا:</h4>
+                    <p>إذا كان لديك أي أسئلة أو مخاوف بخصوص سياسة الخصوصية هذه، يرجى التواصل معنا عبر صفحة "اتصل بنا" أو
+                        البريد الإلكتروني.</p>
+                    <p>نشكركم على ثقتكم في متجرنا ونلتزم بحماية خصوصيتكم وتقديم تجربة تسوق آمنة وممتعة.</p>
+                </div>
+
+                <hr class="policy-divider">
+
+                <!-- 4. Terms and Conditions -->
+                <div class="policy-section">
+                    <h3 style="color: var(--gold); border-bottom: 2px solid var(--gold-light); padding-bottom: 10px;">
+                        شروط وأحكام استخدام متجر رمال</h3>
+                    <h4>مقدمة:</h4>
+                    <p>مرحباً بكم في متجرنا! يُرجى قراءة شروط وأحكام الاستخدام هذه بعناية قبل استخدام موقعنا الإلكتروني
+                        أو الشراء منه. باستخدامك لموقعنا، فإنك توافق على الالتزام بهذه الشروط والأحكام.</p>
+                    <h4 style="margin-top: 15px;">استخدام الموقع:</h4>
+                    <p>يُسمح باستخدام هذا الموقع للأغراض الشخصية وغير التجارية فقط. يحظر استخدام الموقع لأي أغراض غير
+                        قانونية أو محظورة بموجب هذه الشروط والأحكام.</p>
+                    <h4 style="margin-top: 15px;">حقوق الملكية الفكرية:</h4>
+                    <p>جميع المحتويات الموجودة على الموقع، بما في ذلك النصوص والصور والعلامات التجارية، محمية بحقوق
+                        الملكية الفكرية وتعود ملكيتها لمتجر رمال أو للجهات المرخصة لها.</p>
+                    <h4 style="margin-top: 15px;">تقديم الطلبات:</h4>
+                    <p>-عند تقديم طلب شراء، فإنك تقر بأن جميع المعلومات التي قدمتها دقيقة وكاملة.</p>
+                    <p>-يحتفظ متجر رمال بالحق في رفض أي طلب شراء لأي سبب كان.</p>
+                    <h4 style="margin-top: 15px;">الأسعار والدفع:</h4>
+                    <p>-يتم تحديد الأسعار بالدينار الجزائري وتشمل جميع الضرائب المطبقة.</p>
+                    <p>-يجب أن يتم الدفع عبر الوسائل المتاحة والمحددة على الموقع.</p>
+                    <h4 style="margin-top: 15px;">الاسترجاع والاستبدال:</h4>
+                    <p>يخضع الاسترجاع والاستبدال لسياسة الاسترجاع والاستبدال الخاصة بمتجر رمال.</p>
+                    <h4 style="margin-top: 15px;">إخلاء المسؤولية:</h4>
+                    <p>لا يضمن متجر رمال دقة أو اكتمال المحتوى المقدم على الموقع ولا يتحمل المسؤولية عن أي أخطاء أو
+                        إغفالات.</p>
+                    <h4 style="margin-top: 15px;">التعديلات على الشروط والأحكام:</h4>
+                    <p>يحتفظ متجر رمال بالحق في تعديل هذه الشروط والأحكام في أي وقت. ستصبح التغييرات سارية المفعول فور
+                        نشرها على الموقع.</p>
+                    <h4 style="margin-top: 15px;">القانون الحاكم والاختصاص القضائي:</h4>
+                    <p>-تخضع هذه الشروط والأحكام لقوانين الجمهورية الجزائرية وتفسر وفقاً لها.</p>
+                    <p>-يتم تسوية أي نزاعات ناشئة عن هذه الشروط والأحكام أمام المحاكم الجزائرية القضائية الجزائرية.</p>
+                    <p>-في حال نشوء أي خلاف بشأن تفسير أو تنفيذ هذه الشروط والأحكام، يُشجع الطرفان على حل النزاع بطريقة
+                        ودية. إذا لم يتم الوصول إلى حل، يحق للطرفين تقديم النزاع إلى القضاء الجزائري للبت فيه.</p>
+                    <h4 style="margin-top: 15px;">الاتصال بنا:</h4>
+                    <p>إذا كان لديك أي استفسارات أو تحتاج إلى مزيد من المعلومات بخصوص شروط وأحكام استخدام متجر رمال،
+                        يرجى التواصل معنا عبر البريد الإلكتروني أو عن طريق صفحة "اتصل بنا" الموجودة على موقعنا. نحن هنا
+                        لمساعدتك والإجابة على جميع تساؤلاتك.</p>
+                    <h4 style="margin-top: 15px;">التزامات المستخدمين:</h4>
+                    <p>يتحمل المستخدمون مسؤولية الحفاظ على سرية حساباتهم وكلمات المرور ويوافقون على تحمل المسؤولية عن
+                        جميع الأنشطة التي تحدث تحت حساباتهم وكلمات المرور الخاصة بهم. يجب على المستخدمين إخطار رمال
+                        فورًا في حالة أي استخدام غير مصرح به لحسابهم أو أي خرق آخر للأمان.</p>
+                    <h4 style="margin-top: 15px;">تعديل الخدمة أو إنهاؤها:</h4>
+                    <p>يحتفظ متجر رمال بالحق في تعديل أو إيقاف أي جزء من الخدمة في أي وقت، بما في ذلك إضافة أو إزالة
+                        ميزات أو تعليق الخدمة بالكامل، دون إشعار مسبق أو تحمل أي مسؤولية.</p>
+                    <h4 style="margin-top: 15px;">موافقة المستخدم:</h4>
+                    <p>باستخدام موقع رمال، فإنك توافق على جمع واستخدام معلوماتك الشخصية كما هو موضح في سياسة الخصوصية.
+                        إذا تم تحديث سياسة الخصوصية، يجب على المستخدمين مراجعة التحديثات والموافقة عليها.</p>
+                    <h4 style="margin-top: 15px;">الختام:</h4>
+                    <p>شكرًا لك على زيارة واستخدام متجر رمال. نحن ملتزمون بتقديم تجربة تسوق استثنائية لجميع عملائنا
+                        ونتطلع إلى خدمتكم بمنتجاتنا وخدماتنا. باستخدامك لموقعنا، فإنك تقر وتوافق على الالتزام بشروط
+                        وأحكام الاستخدام هذه.</p>
+                    <p>يرجى العلم أن هذه الوثيقة تعتبر ملخصًا لشروط وأحكام الاستخدام ولا تشكل عقدًا قانونيًا كاملًا.
+                        يُنصح بقراءة جميع الشروط والأحكام بعناية لفهم حقوقك.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

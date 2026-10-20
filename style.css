@@ -1,0 +1,276 @@
+/* 
+   RYMEL PREMIUM HOME STYLES
+   Minimal, Elegant, Performance-Focused
+*/
+
+:root {
+    --primary-brown: #2c2420;
+    --gold: #c5a059;
+    --gold-light: #f9f5f0;
+    --text-dark: #333333;
+    --text-muted: #777777;
+    --white: #ffffff;
+    --success: #27ae60;
+    --danger: #e74c3c;
+    --shadow: 0 10px 30px rgba(0,0,0,0.05);
+    --transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    padding: 20px 0;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* Hero Section */
+
+.hero {
+   /* background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/hero-bg.jpg'); *//* Placeholder if needed */
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 35px;
+}
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Forces the video to fill the container perfectly */
+    z-index: -1; /* Pushes the video completely into the background */
+    
+    /* Optional: Add a slight blur or dim to make your text pop */
+    filter: brightness(0.6); 
+}
+@media (max-width: 768px) {
+    .bg-video {
+        /* Prevents the video from rendering on mobile */
+      /*  display: none; */
+    }
+    
+    .hero {
+        /* Applies the same poster image as a CSS background instead */
+       /* background: url('images/fallback-image.avif') center/cover no-repeat;*/
+    }
+}
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.btn-hero {
+    display: inline-block;
+    padding: 15px 40px;
+    background: var(--gold);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-hero:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(197, 160, 89, 0.4);
+}
+
+/* Features Bar */
+.features-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.feature-item {
+    padding: 30px;
+    background: var(--gold-light);
+    border-radius: 20px;
+    transition: var(--transition);
+}
+
+.feature-item i {
+    color: var(--gold);
+    margin-bottom: 15px;
+    width: 32px;
+    height: 32px;
+}
+
+.feature-item h3 {
+    font-size: 1.1rem;
+    color: var(--primary-brown);
+}
+
+/* Product Grid */
+.products-section {
+    padding-bottom: 80px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: var(--primary-brown);
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #f0f0f0;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img {
+    width: 100%;
+    aspect-ratio: 1;
+    overflow: hidden;
+    background: #f9f9f9;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-info .badge {
+    background: var(--gold-light);
+    color: var(--gold);
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.card-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: var(--primary-brown);
+}
+
+.card-info .price {
+    font-weight: 700;
+    color: #8C6400;
+    font-size: 1.8rem;
+}
+
+/* Loader */
+.loader-container {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.spin { animation: spin 1s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Footer */
+.main-footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 60px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+.footer-brand img { height: 50px; margin-bottom: 20px; }
+.footer-brand p { color: #ccc; font-size: 0.95rem; }
+.footer-links h4, .footer-social h4, .footer-contact h4 { color: var(--gold); margin-bottom: 20px; }
+.footer-links ul { list-style: none; }
+.footer-links ul li { margin-bottom: 12px; }
+.footer-links ul li a { color: #ccc; text-decoration: none; transition: var(--transition); }
+.footer-links ul li a:hover { color: #fff; padding-right: 5px; }
+
+.social-icons { display: flex; gap: 15px; }
+.social-icon { width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; transition: var(--transition); }
+.social-icon:hover { background: var(--gold); transform: translateY(-3px); }
+
+.footer-contact p { display: flex; align-items: center; gap: 10px; color: #ccc; margin-bottom: 12px; }
+.footer-contact p i { color: var(--gold); width: 18px; }
+
+.footer-bottom { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); color: #888; font-size: 0.9rem; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-content h1 { font-size: 2.2rem; }
+    .features-bar { grid-template-columns: 1fr; }
+    .footer-content { grid-template-columns: 1fr; text-align: center; }
+    .social-icons, .footer-contact p { justify-content: center; }
+}
